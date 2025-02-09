@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horário Matutino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Horário Matutino</h1>
+    <button onclick="gerarPDF('horarioMatutino', 'Horario_Matutino')">Baixar PDF</button>
+    <a href="index.html">Voltar</a>
+
+  <div class="table-container">
+    <table id="horarioMatutino"> <!-- Ou horarioIntegral -->
+      <thead>
+        <tr>
+          <th>Dia</th> <th>Aula</th> <th>Horário</th>
+          <th>M1A</th> <th>M1B</th> <th>M1C</th>
+          <th>M2A</th> <th>M2B</th> <th>M2C</th>
+          <th>M2D</th> <th>M2E</th>
+          <th>M3A</th> <th>M3B</th> <th>M3C</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  
+  <!-- Biblioteca jsPDF e AutoTable -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.21/jspdf.plugin.autotable.min.js"></script>
+<script src="script.js"></script>
+
+  <script>
+    carregarHorario('horario.csv', 'horarioMatutino', horariosMatutino, 5);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horário Integral</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Horário Integral</h1>
+    <button onclick="gerarPDF('horarioIntegral', 'Horario_Integral')">Baixar PDF</button>
+  <a href="index.html">Voltar</a>
+
+  <div class="table-container">
+    <table id="horarioIntegral"> <!-- Ou horarioIntegral -->
+      <thead>
+        <tr>
+            <th>Dia</th> <th>Aula</th> <th>Horário</th>
+            <th>I1TEC</th> <th>I1A</th> <th>I1B</th> <th>I1C</th> 
+            <th>I2TEC</th> <th>I2A</th> <th>I3A</th> <th>I3B</th>
+          </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  
+    <!-- Biblioteca jsPDF e AutoTable -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.21/jspdf.plugin.autotable.min.js"></script>
+  <script src="script.js"></script>
+  <script>carregarHorario('horario_integral.csv', 'horarioIntegral', horariosIntegral, 7);</script>
+
+</body>
+</html>

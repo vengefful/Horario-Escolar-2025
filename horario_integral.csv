@@ -1,0 +1,64 @@
+nome,dia,aula,turma,disciplina
+Sem Professor,Segunda,1,I1TEC,Coop. Econ. Solid.
+Jefferson,Segunda,2,I1TEC,Arte
+Antônio,Segunda,3,I1TEC,Física
+Berivânia,Segunda,4,I1TEC,Português
+Berivânia,Segunda,5,I1TEC,Português
+Weliton,Segunda,6,I1TEC,TAC
+Sem Professor,Segunda,7,I1TEC,Fund. Coop.
+Joyce,Segunda,1,I1A,Eletiva 2
+Joyce,Segunda,2,I1A,Eletiva 2
+Leandro,Segunda,3,I1A,Matemática
+Leandro,Segunda,4,I1A,Matemática
+Antônio,Segunda,5,I1A,Física
+Sem Professor,Segunda,6,I1A,Biologia
+Jefferson,Segunda,7,I1A,Arte
+Francisco,Segunda,1,I1B,Eletiva 2
+Francisco,Segunda,2,I1B,Eletiva 2
+Sem Professor,Segunda,3,I1B,Biologia
+Juliana,Segunda,4,I1B,Ed. Física
+Jirlan,Segunda,5,I1B,Filosofia
+Silvânia,Segunda,6,I1B,Português
+Sem Professor,Segunda,7,I1B,PIT
+Antônio,Segunda,1,I1C,Eletiva 2
+Antônio,Segunda,2,I1C,Eletiva 2
+Helton,Segunda,3,I1C,Português
+Helton,Segunda,4,I1C,Português
+Manoel,Segunda,5,I1C,Matemática
+Manoel,Segunda,6,I1C,Matemática
+Berivânia,Segunda,7,I1C,Projeto Integrador
+Jaqueline,Segunda,1,I1D,Eletiva 2
+Jaqueline,Segunda,2,I1D,Eletiva 2
+Jaqueline,Segunda,3,I1D,Projeto Integrador
+Jefferson,Segunda,4,I1D,Arte
+Sem Professor,Segunda,5,I1D,PIT
+Sem Professor,Segunda,6,I1D,Biologia
+Lucilene,Segunda,7,I1D,Matemática
+Sem Professor,Segunda,1,I2TEC,Hist. Art.
+Sem Professor,Segunda,2,I2TEC,Plas. Erg.
+Jefferson,Segunda,3,I2TEC,Arte
+Joyce,Segunda,4,I2TEC,Inglês
+Helton,Segunda,5,I2TEC,Português
+Marcos,Segunda,6,I2TEC,Matemática
+Sem Professor,Segunda,7,I2TEC,Econ. Criat.
+Juliana,Segunda,1,I2A,Eletiva 2
+Juliana,Segunda,2,I2A,Eletiva 2
+Joyce,Segunda,3,I2A,Pra. LGG e CHS.
+Jaqueline,Segunda,4,I2A,Química
+Silvânia,Segunda,5,I2A,Português
+Jefferson,Segunda,6,I2A,Arte
+Jirlan,Segunda,7,I2A,Filosofia
+Helton,Segunda,1,I3A,Português
+Helton,Segunda,2,I3A,Português
+Juliana,Segunda,3,I3A,Ed. Física
+Antônio,Segunda,4,I3A,Física
+Jefferson,Segunda,5,I3A,Arte
+Jirlan,Segunda,6,I3A,História
+Manoel,Segunda,7,I3A,Projeto Integrador
+Jefferson,Segunda,1,I3B,Arte
+Sem Professor,Segunda,2,I3B,Biologia
+Francisco,Segunda,3,I3B,Projeto de Vida
+Francisco,Segunda,4,I3B,Projeto de Vida
+Sem Professor,Segunda,5,I3B,Filosofia
+Helton,Segunda,6,I3B,Português
+Helton,Segunda,7,I3B,Português

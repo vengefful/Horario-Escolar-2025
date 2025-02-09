@@ -1,0 +1,56 @@
+nome,dia,aula,turma,disciplina
+Jefferson,Segunda,1,M1A,Arte
+Francisco,Segunda,2,M1A,Química
+Sem Professor,Segunda,3,M1A,Biologia
+Fialho,Segunda,4,M1A,Matemática
+Antônio,Segunda,5,M1A,TAC
+Francisco,Segunda,1,M1B,Arte
+Juliana,Segunda,2,M1B,Química
+Francisco,Segunda,3,M1B,Biologia
+Antônio,Segunda,4,M1B,Matemática
+Berivânia,Segunda,5,M1B,TAC
+Berivânia,Segunda,1,M1C,Português
+Sem Professor,Segunda,2,M1C,TAC
+Berivânia,Segunda,3,M1C,Português
+Sem Professor,Segunda,4,M1C,Biologia
+Juliana,Segunda,5,M1C,Ed. Física
+Juliana,Segunda,1,M2A,Prat LGG e CHS
+Antônio,Segunda,2,M2A,Física
+Leandro,Segunda,3,M2A,Matemática
+Leandro,Segunda,4,M2A,Matemática
+Tatiana,Segunda,5,M2A,Português
+Antônio,Segunda,1,M2B,Física
+Sem Professor,Segunda,2,M2B,Filosofia
+Jaqueline,Segunda,3,M2B,Química
+Sem Professor,Segunda,4,M2B,Apr Mat e Cnt
+Leandro,Segunda,5,M2B,Matemática
+Leandro,Segunda,1,M2C,Matemática
+Sem Professor,Segunda,2,M2C,Filosofia
+Juliana,Segunda,3,M2C,Prat LGG e CHS
+Tatiana,Segunda,4,M2C,Português
+Jaqueline,Segunda,5,M2C,Química
+Tatiana,Segunda,1,M2D,Português
+Jaqueline,Segunda,2,M2D,Química
+Tatiana,Segunda,3,M2D,Português
+Lucilene,Segunda,4,M2D,Matemática
+Joyce,Segunda,5,M2D,Inglês
+Silvânia,Segunda,1,M2E,Português
+Silvânia,Segunda,2,M2E,Português
+Antônio,Segunda,3,M2E,Física
+Jaqueline,Segunda,4,M2E,Apr Mat e Cnt
+Silvânia,Segunda,5,M2E,Português
+Fialho,Segunda,1,M3A,Matemática
+Jefferson,Segunda,2,M3A,Arte
+Fialho,Segunda,3,M3A,Matemática
+ELaine,Segunda,4,M3A,Português
+Elaine,Segunda,5,M3A,Português
+Joyce,Segunda,1,M3B,Inglês
+ELaine,Segunda,2,M3B,Português
+ELaine,Segunda,3,M3B,Português
+Juliana,Segunda,4,M3B,Ed. Física
+Sem Professor,Segunda,5,M3B,Filosofia
+ELaine,Segunda,1,M3C,Português
+Fialho,Segunda,2,M3C,Matemática
+Jefferson,Segunda,3,M3C,Arte
+Joyce,Segunda,4,M3C,Inglês
+Fialho,Segunda,5,M3C,Matemática
