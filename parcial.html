@@ -9,18 +9,16 @@
 <body>
 
   <h1>Horário Matutino</h1>
-    <button onclick="gerarPDF('horarioMatutino', 'Horario_Matutino')">Baixar PDF</button>
-    <a href="index.html">Voltar</a>
+  <button onclick="gerarPDF('horarioMatutino', 'Horario_Matutino')">Baixar PDF</button>
+  <a href="index.html">Voltar</a>
 
   <div class="table-container">
-    <table id="horarioMatutino"> <!-- Ou horarioIntegral -->
+    <table id="horarioMatutino">
       <thead>
         <tr>
-          <th>Dia</th> <th>Aula</th> <th>Horário</th>
-          <th>M1A</th> <th>M1B</th> <th>M1C</th>
-          <th>M2A</th> <th>M2B</th> <th>M2C</th>
-          <th>M2D</th> <th>M2E</th>
-          <th>M3A</th> <th>M3B</th> <th>M3C</th>
+          <th>Dia</th>
+          <th>Aula</th>
+          <th>Horário</th>
         </tr>
       </thead>
       <tbody></tbody>
@@ -28,12 +26,93 @@
   </div>
   
   <!-- Biblioteca jsPDF e AutoTable -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.21/jspdf.plugin.autotable.min.js"></script>
-<script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.21/jspdf.plugin.autotable.min.js"></script>
+  <script src="turmas_matutino.js"></script>
 
   <script>
-    carregarHorario('horario.csv', 'horarioMatutino', horariosMatutino, 5);
+    function preencherTabela(dados) {
+      const tabela = document.getElementById('horarioMatutino');
+      const tbody = tabela.getElementsByTagName('tbody')[0];
+      const turmas = [...new Set(dados.map(dado => dado.turma))];
+
+      // Adicionar colunas das turmas no cabeçalho apenas uma vez
+      const thead = tabela.getElementsByTagName('thead')[0];
+      const headerRow = thead.rows[0];
+      if (headerRow.cells.length === 3) { // Verifica se as colunas das turmas já foram adicionadas
+        turmas.forEach(turma => {
+          const th = document.createElement('th');
+          th.textContent = turma;
+          headerRow.appendChild(th);
+        });
+      }
+
+      // Agrupar dados por dia e aula
+      const dadosAgrupados = {};
+      dados.forEach(dado => {
+        const chave = `${dado.dia}-${dado.aula}`;
+        if (!dadosAgrupados[chave]) {
+          dadosAgrupados[chave] = { dia: dado.dia, aula: dado.aula, horarios: {} };
+        }
+        dadosAgrupados[chave].horarios[dado.turma] = `${dado.disciplina} - ${dado.nome || 'Sem Professor'}`;
+      });
+
+      // Definir horários das aulas
+      const horarios = {
+        1: '7:00 - 8:00',
+        2: '8:00 - 9:00',
+        3: '9:00 - 10:00',
+        4: '10:10 - 11:00',
+        5: '11:00 - 12:00'
+      };
+
+      // Preencher a tabela
+      let lastDia = '';
+      let lastRow = null;
+      let rowspan = 1;
+
+      Object.values(dadosAgrupados).forEach(dado => {
+        const newRow = tbody.insertRow();
+        if (dado.dia === lastDia) {
+          rowspan++;
+          lastRow.cells[0].rowSpan = rowspan;
+          newRow.insertCell(0).style.display = 'none';
+        } else {
+          lastDia = dado.dia;
+          lastRow = newRow;
+          rowspan = 1;
+          const diaCell = newRow.insertCell(0);
+          diaCell.textContent = dado.dia;
+          newRow.classList.add('new-day'); // Adicionar a classe new-day
+        }
+        newRow.insertCell(1).textContent = dado.aula;
+        newRow.insertCell(2).textContent = horarios[dado.aula]; // Preencher com o horário correspondente
+
+        turmas.forEach(turma => {
+          const cell = newRow.insertCell();
+          cell.textContent = dado.horarios[turma] || `Sem Professor`;
+        });
+      });
+    }
+
+    function gerarPDF(tabelaId, nomeArquivo) {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF('landscape'); // Modo horizontal
+      doc.autoTable({
+        html: `#${tabelaId}`,
+        styles: { fontSize: 8 }, // Reduzir o tamanho da fonte
+        margin: { top: 10, bottom: 10, left: 10, right: 10 } // Ajustar margens
+      });
+      doc.save(`${nomeArquivo}.pdf`);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      carregarHTML('Classes.html', doc => {
+        const dadosMatutino = extrairDadosMatutino(doc);
+        console.log('Dados Matutino:', dadosMatutino);
+        preencherTabela(dadosMatutino);
+      });
+    });
   </script>
 
 </body>

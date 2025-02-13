@@ -1,0 +1,2854 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='ProgId' content='ASC.export HTML'>
+<meta name='Generator' content="ASC timetable export">
+<title>ASC Timetables Export</title>
+<style>
+<!--
+.xl1, .xl1b, .xl2, .s48, .s47, .s46, .s45, .s44, .s43, .s42, .s41, .s40, .s39, .s38, .s37, .s36, .s35, .s34, .s33, .s32, .s31, .s30, .s29, .s28, .s27, .s26, .s25, .s24, .s23, .s22, .s21, .s20, .s19, .s18, .s17, .s16, .s15, .s14, .s13, .s12, .s11, .xl3, .xl2b, .xl3b, .xl2h, .xl3h {
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:238;
+	text-align:general;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;
+	border-left:01px solid black;
+	border-right:01px solid black;
+	border-top:01px solid black;
+	border-bottom:01px solid black;
+	min-width:20px;
+}
+.xl1, .xl1b {
+	font-weight:700;
+	mso-number-format:General;
+	text-align:center; 
+	vertical-align:bottom;
+	border-top:2px solid black;
+	border-bottom:2px solid black;
+}
+.xl1b, .xl2b, .xl3b, .xl2h, .xl3h {
+	border-right:2px solid black;
+}
+.xl2, .s48, .s47, .s46, .s45, .s44, .s43, .s42, .s41, .s40, .s39, .s38, .s37, .s36, .s35, .s34, .s33, .s32, .s31, .s30, .s29, .s28, .s27, .s26, .s25, .s24, .s23, .s22, .s21, .s20, .s19, .s18, .s17, .s16, .s15, .s14, .s13, .s12, .s11, .xl3, .xl2b, .xl3b, .xl2h, .xl3h {
+	font-weight:normal;
+	mso-number-format:"\@";
+	vertical-align:middle;
+}
+.xl3, .xl3b, .xl3h {
+	background:#E0E0E0; 
+	mso-pattern:#E0E0E0 none;
+}
+.xl2h, .xl3h {
+	font-weight:700; 
+	text-align:center; 
+	vertical-align:middle;
+}
+.s11 {
+	background:#FFFFFF; mso-pattern:#FFFFFF none;
+}
+.s12 {
+	background:#FFCCFF; mso-pattern:#FFCCFF none;
+}
+.s13 {
+	background:#80FF80; mso-pattern:#80FF80 none;
+}
+.s14 {
+	background:#99FF66; mso-pattern:#99FF66 none;
+}
+.s15 {
+	background:#00CC00; mso-pattern:#00CC00 none;
+}
+.s16 {
+	background:#FFFFCC; mso-pattern:#FFFFCC none;
+}
+.s17 {
+	background:#00FFFF; mso-pattern:#00FFFF none;
+}
+.s18 {
+	background:#00FF00; mso-pattern:#00FF00 none;
+}
+.s19 {
+	background:#FFCC66; mso-pattern:#FFCC66 none;
+}
+.s20 {
+	background:#CCFFFF; mso-pattern:#CCFFFF none;
+}
+.s21 {
+	background:#3333FF; mso-pattern:#3333FF none;
+}
+.s22 {
+	background:#009933; mso-pattern:#009933 none;
+}
+.s23 {
+	background:#993333; mso-pattern:#993333 none;
+}
+.s24 {
+	background:#808000; mso-pattern:#808000 none;
+}
+.s25 {
+	background:#33CC33; mso-pattern:#33CC33 none;
+}
+.s26 {
+	background:#0000FF; mso-pattern:#0000FF none;
+}
+.s27 {
+	background:#CC6600; mso-pattern:#CC6600 none;
+}
+.s28 {
+	background:#8000FF; mso-pattern:#8000FF none;
+}
+.s29 {
+	background:#00CCFF; mso-pattern:#00CCFF none;
+}
+.s30 {
+	background:#FFFF66; mso-pattern:#FFFF66 none;
+}
+.s31 {
+	background:#66FFFF; mso-pattern:#66FFFF none;
+}
+.s32 {
+	background:#008080; mso-pattern:#008080 none;
+}
+.s33 {
+	background:#FF0000; mso-pattern:#FF0000 none;
+}
+.s34 {
+	background:#669900; mso-pattern:#669900 none;
+}
+.s35 {
+	background:#DDFF97; mso-pattern:#DDFF97 none;
+}
+.s36 {
+	background:#FF6666; mso-pattern:#FF6666 none;
+}
+.s37 {
+	background:#FF00FF; mso-pattern:#FF00FF none;
+}
+.s38 {
+	background:#FF8000; mso-pattern:#FF8000 none;
+}
+.s39 {
+	background:#66FF66; mso-pattern:#66FF66 none;
+}
+.s40 {
+	background:#FF8080; mso-pattern:#FF8080 none;
+}
+.s41 {
+	background:#CCCC00; mso-pattern:#CCCC00 none;
+}
+.s42 {
+	background:#FFFF00; mso-pattern:#FFFF00 none;
+}
+.s43 {
+	background:#6666FF; mso-pattern:#6666FF none;
+}
+.s44 {
+	background:#0080FF; mso-pattern:#0080FF none;
+}
+.s45 {
+	background:#FF9966; mso-pattern:#FF9966 none;
+}
+.s46 {
+	background:#CC0000; mso-pattern:#CC0000 none;
+}
+.s47 {
+	background:#808080; mso-pattern:#808080 none;
+}
+.s48 {
+	background:#800080; mso-pattern:#800080 none;
+}
+-->	
+</style>
+</head>
+<body>
+<h1>Turmas</h1>
+
+<p>
+<h1>M1A</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=s11>TAC<br/>ANTONIO BISPO<br/></td>
+<td class=s12>MAT<br/>FIALHO<br/></td>
+<td class=s13>BIO<br/>MÔNICA<br/></td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=s12>MAT<br/>FIALHO<br/></td>
+<td class=s12>PV<br/>FIALHO<br/></td>
+<td class=s11>TAC<br/>ANTONIO BISPO<br/></td>
+<td class=s11>FIS<br/>ANTONIO BISPO<br/></td>
+<td class=s16>PIT<br/>FRANCISCO<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=s12>MAT<br/>FIALHO<br/></td>
+<td class=s16>QUI<br/>FRANCISCO<br/></td>
+<td class=s16>PIT<br/>FRANCISCO<br/></td>
+<td class=s17>FILO<br/>DIDA<br/></td>
+<td class=s12>MAT<br/>FIALHO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s13>BIO<br/>MÔNICA<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s20>ED. FIS<br/>MYRELA<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=s21>GEO<br/>EDUINA<br/></td>
+<td class=s22>HIST<br/>JIRLAN<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s20>ED. FIS<br/>MYRELA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>M1B</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s13>BIO<br/>MÔNICA<br/></td>
+<td class=s11>TAC<br/>ANTONIO BISPO<br/></td>
+<td class=s24>PORT<br/>BERIVÂNIA<br/></td>
+<td class=s24>PORT<br/>BERIVÂNIA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=s11>FIS<br/>ANTONIO BISPO<br/></td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=s25>INGLÊS<br/>BETE<br/></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s11>TAC<br/>ANTONIO BISPO<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=s16>PIT<br/>FRANCISCO<br/></td>
+<td class=s13>PV<br/>MÔNICA<br/></td>
+<td class=s17>FILO<br/>DIDA<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s16>QUI<br/>FRANCISCO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=s16>PIT<br/>FRANCISCO<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s13>BIO<br/>MÔNICA<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=s22>HIST<br/>JIRLAN<br/></td>
+<td class=s24>PORT<br/>BERIVÂNIA<br/></td>
+<td class=s21>GEO<br/>EDUINA<br/></td>
+<td class=s24>PORT<br/>BERIVÂNIA<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>M1C</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=s27>TAC<br/>KATIA<br/></td>
+<td class=s24>PORT<br/>BERIVÂNIA<br/></td>
+<td class=s24>PORT<br/>BERIVÂNIA<br/></td>
+<td class=s11>FIS<br/>ANTONIO BISPO<br/></td>
+<td class=s28>ARTE<br/>SILVÂNIA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=s29>MAT<br/>BRITO<br/></td>
+<td class=s29>MAT<br/>BRITO<br/></td>
+<td class=s13>BIO<br/>MÔNICA<br/></td>
+<td class=s30>PIT<br/>LUCILENE<br/></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=s30>PIT<br/>LUCILENE<br/></td>
+<td class=s17>FILO<br/>DIDA<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s15>PV<br/>JOYCE<br/></td>
+<td class=s27>TAC<br/>KATIA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=s29>MAT<br/>BRITO<br/></td>
+<td class=s29>MAT<br/>BRITO<br/></td>
+<td class=s16>QUI<br/>FRANCISCO<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=s24>PORT<br/>BERIVÂNIA<br/></td>
+<td class=s31>GEO<br/>ELIANA<br/></td>
+<td class=s22>HIST<br/>JIRLAN<br/></td>
+<td class=s13>BIO<br/>MÔNICA<br/></td>
+<td class=s24>PORT<br/>BERIVÂNIA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>M2A</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s23>PRAT. LGG E CHS<br/>JULIANA<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=s11>FIS<br/>ANTONIO BISPO<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s17>FILO<br/>DIDA<br/></td>
+<td class=s35>BIO<br/>LUCAS<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s27>PV<br/>KATIA<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=s20>ED. FIS<br/>MYRELA<br/></td>
+<td class=s18>APROF LGG E CHS<br/>DARA<br/></td>
+<td class=s23>PRAT. LGG E CHS<br/>JULIANA<br/></td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s18>APROF LGG E CHS<br/>DARA<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=s20>ED. FIS<br/>MYRELA<br/></td>
+<td class=s21>GEO<br/>EDUINA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>M2B</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s11>FIS<br/>ANTONIO BISPO<br/></td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=s27>APROF MAT E CNT<br/>KATIA<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=s35>BIO<br/>LUCAS<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s17>FILO<br/>DIDA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=s27>APROF MAT E CNT<br/>KATIA<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s13>PRAT. MAT E CNT<br/>MÔNICA<br/></td>
+<td class=s25>INGLÊS<br/>BETE<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s36>PV<br/>PEDRO<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s21>GEO<br/>EDUINA<br/></td>
+<td class=s13>PRAT. MAT E CNT<br/>MÔNICA<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>M2C</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=s38>PV<br/>PROTÁSIO<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s38>BIO<br/>PROTÁSIO<br/></td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=s23>PRAT. LGG E CHS<br/>JULIANA<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=s25>INGLÊS<br/>BETE<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2>FILO<br/>SEM PROFESSOR<br/></td>
+<td class=s23>PRAT. LGG E CHS<br/>JULIANA<br/></td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=s31>APROF LGG E CHS<br/>ELIANA<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=s31>APROF LGG E CHS<br/>ELIANA<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=s40>ARTE<br/>ELAINE<br/></td>
+<td class=s31>GEO<br/>ELIANA<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>M2D</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=s38>BIO<br/>PROTÁSIO<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=s30>MAT<br/>LUCILENE<br/></td>
+<td class=s35>PRAT. MAT E CNT<br/>LUCAS<br/></td>
+<td class=s30>MAT<br/>LUCILENE<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=s30>MAT<br/>LUCILENE<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s17>FILO<br/>DIDA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=s30>MAT<br/>LUCILENE<br/></td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=s31>GEO<br/>ELIANA<br/></td>
+<td class=s35>PV<br/>LUCAS<br/></td>
+<td class=s35>APROF MAT E CNT<br/>LUCAS<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=s35>PRAT. MAT E CNT<br/>LUCAS<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s35>APROF MAT E CNT<br/>LUCAS<br/></td>
+<td class=s22>HIST<br/>JIRLAN<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>M2E</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s38>BIO<br/>PROTÁSIO<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s12>APROF MAT E CNT<br/>FIALHO<br/></td>
+<td class=s11>FIS<br/>ANTONIO BISPO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=s25>INGLÊS<br/>BETE<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s13>PRAT. MAT E CNT<br/>MÔNICA<br/></td>
+<td class=s12>APROF MAT E CNT<br/>FIALHO<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3>FILO<br/>SEM PROFESSOR<br/></td>
+<td class=s41>MAT<br/>MANOEL<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s13>PRAT. MAT E CNT<br/>MÔNICA<br/></td>
+<td class=s41>MAT<br/>MANOEL<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=s41>MAT<br/>MANOEL<br/></td>
+<td class=s41>PV<br/>MANOEL<br/></td>
+<td class=s20>ED. FIS<br/>MYRELA<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=s20>ED. FIS<br/>MYRELA<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s31>GEO<br/>ELIANA<br/></td>
+<td class=s22>HIST<br/>JIRLAN<br/></td>
+<td class=s41>MAT<br/>MANOEL<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>M3A</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=s40>PORT<br/>ELAINE<br/></td>
+<td class=s12>MAT<br/>FIALHO<br/></td>
+<td class=s40>PORT<br/>ELAINE<br/></td>
+<td class=s12>MAT<br/>FIALHO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2>SOCIO<br/>SEM PROFESSOR<br/></td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=s12>MAT<br/>FIALHO<br/></td>
+<td class=s35>BIO<br/>LUCAS<br/></td>
+<td class=s25>INGLÊS<br/>BETE<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3>FILO<br/>SEM PROFESSOR<br/></td>
+<td class=s12>MAT<br/>FIALHO<br/></td>
+<td class=s42>GEO<br/>MICHELE<br/></td>
+<td class=s35>BIO<br/>LUCAS<br/></td>
+<td class=s25>INGLÊS<br/>BETE<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=s20>ED. FIS<br/>MYRELA<br/></td>
+<td class=s43>QUI<br/>EDENILZA<br/></td>
+<td class=s40>PORT<br/>ELAINE<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=s42>GEO<br/>MICHELE<br/></td>
+<td class=s20>ED. FIS<br/>MYRELA<br/></td>
+<td class=s40>PORT<br/>ELAINE<br/></td>
+<td class=s43>QUI<br/>EDENILZA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>M3B</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=s40>PORT<br/>ELAINE<br/></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s40>PORT<br/>ELAINE<br/></td>
+<td class=s32>ARTE<br/>TATIANA<br/></td>
+<td class=s38>BIO<br/>PROTÁSIO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2>FILO<br/>SEM PROFESSOR<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=s38>BIO<br/>PROTÁSIO<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s42>GEO<br/>MICHELE<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=s43>QUI<br/>EDENILZA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=s42>GEO<br/>MICHELE<br/></td>
+<td class=s40>PORT<br/>ELAINE<br/></td>
+<td class=s43>QUI<br/>EDENILZA<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=s40>PORT<br/>ELAINE<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>M3C</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=s12>MAT<br/>FIALHO<br/></td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s40>PORT<br/>ELAINE<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s35>BIO<br/>LUCAS<br/></td>
+<td class=s12>MAT<br/>FIALHO<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=s17>FILO<br/>DIDA<br/></td>
+<td class=s42>GEO<br/>MICHELE<br/></td>
+<td class=s12>MAT<br/>FIALHO<br/></td>
+<td class=s12>MAT<br/>FIALHO<br/></td>
+<td class=s35>BIO<br/>LUCAS<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=s40>PORT<br/>ELAINE<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=s43>QUI<br/>EDENILZA<br/></td>
+<td class=s40>PORT<br/>ELAINE<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=s40>PORT<br/>ELAINE<br/></td>
+<td class=s43>QUI<br/>EDENILZA<br/></td>
+<td class=s42>GEO<br/>MICHELE<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>I1TEC</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s16>QUI<br/>FRANCISCO<br/></td>
+<td class=s11>FIS<br/>ANTONIO BISPO<br/></td>
+<td class=s24>PORT<br/>BERIVÂNIA<br/></td>
+<td class=s24>PORT<br/>BERIVÂNIA<br/></td>
+<td class=s38>PIT<br/>PROTÁSIO<br/></td>
+<td class=s44>FUND. COOP.<br/>GENILDA<br/></td>
+<td class=s44>COOP. SOLID.<br/>GENILDA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s38>PIT<br/>PROTÁSIO<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s16>PV<br/>FRANCISCO<br/></td>
+<td class=s16>PV<br/>FRANCISCO<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s45>ARTE<br/>WELITON<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s35>BIO<br/>LUCAS<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s20>SAUDE OCUP.<br/>MYRELA<br/></td>
+<td class=s43>COOP. SUST.<br/>EDENILZA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s25>INGLÊS<br/>BETE<br/></td>
+<td class=s35>BIO<br/>LUCAS<br/></td>
+<td class=s20>SAUDE OCUP.<br/>MYRELA<br/></td>
+<td class=s43>COOP. SUST.<br/>EDENILZA<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s45>TAC<br/>WELITON<br/></td>
+<td class=s24>PORT<br/>BERIVÂNIA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=s24>PORT<br/>BERIVÂNIA<br/></td>
+<td class=s44>FUND. COOP.<br/>GENILDA<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=s21>GEO<br/>EDUINA<br/></td>
+<td class=s45>TAC<br/>WELITON<br/></td>
+<td class=s19>FILO<br/>FABRÍCIO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>I1A</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s28>PIT<br/>SILVÂNIA<br/></td>
+<td class=s44>EL 2<br/>GENILDA<br/></td>
+<td class=s44>EL 2<br/>GENILDA<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s30>TAC<br/>LUCILENE<br/></td>
+<td class=s22>FILO<br/>JIRLAN<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s28>PIT<br/>SILVÂNIA<br/></td>
+<td class=s11>FIS<br/>ANTONIO BISPO<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=s44>BIO<br/>GENILDA<br/></td>
+<td class=s30>TAC<br/>LUCILENE<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s25>INGLÊS<br/>BETE<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s45>ARTE<br/>WELITON<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s36>PI<br/>PEDRO<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s43>QUI<br/>EDENILZA<br/></td>
+<td class=s25>EL 1<br/>BETE<br/></td>
+<td class=s25>EL 1<br/>BETE<br/></td>
+<td class=s43>PV<br/>EDENILZA<br/></td>
+<td class=s43>PV<br/>EDENILZA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3>CLUB. JUV.<br/>SEM PROFESSOR<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=s21>GEO<br/>EDUINA<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=s36>PI<br/>PEDRO<br/></td>
+<td class=s44>BIO<br/>GENILDA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>I1B</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s16>EL 2<br/>FRANCISCO<br/></td>
+<td class=s16>EL 2<br/>FRANCISCO<br/></td>
+<td class=s44>BIO<br/>GENILDA<br/></td>
+<td class=s45>ARTE<br/>WELITON<br/></td>
+<td class=s27>PIT<br/>KATIA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s16>QUI<br/>FRANCISCO<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s29>MAT<br/>BRITO<br/></td>
+<td class=s29>MAT<br/>BRITO<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s42>PI<br/>MICHELE<br/></td>
+<td class=s42>GEO<br/>MICHELE<br/></td>
+<td class=s29>TAC<br/>BRITO<br/></td>
+<td class=s29>MAT<br/>BRITO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s42>PV<br/>MICHELE<br/></td>
+<td class=s42>PV<br/>MICHELE<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s46>EL 1<br/>HELTON<br/></td>
+<td class=s46>EL 1<br/>HELTON<br/></td>
+<td class=s42>PI<br/>MICHELE<br/></td>
+<td class=s27>PIT<br/>KATIA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3>CLUB. JUV.<br/>SEM PROFESSOR<br/></td>
+<td class=s44>BIO<br/>GENILDA<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s17>FILO<br/>DIDA<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=s29>TAC<br/>BRITO<br/></td>
+<td class=s29>MAT<br/>BRITO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>1IC</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s16>QUI<br/>FRANCISCO<br/></td>
+<td class=s11>EL 2<br/>ANTONIO BISPO<br/></td>
+<td class=s11>EL 2<br/>ANTONIO BISPO<br/></td>
+<td class=s24>ARTE<br/>BERIVÂNIA<br/></td>
+<td class=s22>FILO<br/>JIRLAN<br/></td>
+<td class=s41>MAT<br/>MANOEL<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s11>TAC<br/>ANTONIO BISPO<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s41>MAT<br/>MANOEL<br/></td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=s46>PI<br/>HELTON<br/></td>
+<td class=s13>PIT<br/>MÔNICA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s46>PI<br/>HELTON<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=s27>BIO<br/>KATIA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s31>GEO<br/>ELIANA<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=s31>EL 1<br/>ELIANA<br/></td>
+<td class=s31>EL 1<br/>ELIANA<br/></td>
+<td class=s27>BIO<br/>KATIA<br/></td>
+<td class=s13>PIT<br/>MÔNICA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3>CLUB. JUV.<br/>SEMN PROFESSOR<br/></td>
+<td class=s41>MAT<br/>MANOEL<br/></td>
+<td class=s11>TAC<br/>ANTONIO BISPO<br/></td>
+<td class=s41>MAT<br/>MANOEL<br/></td>
+<td class=s31>PV<br/>ELIANA<br/></td>
+<td class=s31>PV<br/>ELIANA<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>I1D</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s34>PI<br/>JAQUELINE<br/></td>
+<td class=s38>PIT<br/>PROTÁSIO<br/></td>
+<td class=s34>EL 2<br/>JAQUELINE<br/></td>
+<td class=s34>EL 2<br/>JAQUELINE<br/></td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=s27>TAC<br/>KATIA<br/></td>
+<td class=s30>MAT<br/>LUCILENE<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s16>QUI<br/>FRANCISCO<br/></td>
+<td class=s34>PI<br/>JAQUELINE<br/></td>
+<td class=s38>PIT<br/>PROTÁSIO<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s22>HIST<br/>JIRLAN<br/></td>
+<td class=s30>MAT<br/>LUCILENE<br/></td>
+<td class=s27>BIO<br/>KATIA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s20>PV<br/>MYRELA<br/></td>
+<td class=s20>PV<br/>MYRELA<br/></td>
+<td class=s30>MAT<br/>LUCILENE<br/></td>
+<td class=s20>ED. FIS<br/>MYRELA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s20>ED. FIS<br/>MYRELA<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s42>EL 1<br/>MICHELE<br/></td>
+<td class=s42>EL 1<br/>MICHELE<br/></td>
+<td class=s18>PORT<br/>DARA<br/></td>
+<td class=s30>MAT<br/>LUCILENE<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3>CLUB. JUV.<br/>SEM PROFESSOR<br/></td>
+<td class=s11>FIS<br/>ANTONIO BISPO<br/></td>
+<td class=s31>GEO<br/>ELIANA<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s17>FILO<br/>DIDA<br/></td>
+<td class=s27>TAC<br/>KATIA<br/></td>
+<td class=s27>BIO<br/>KATIA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>I2TEC</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=xl3>PLAST. ERG.<br/>SEM PROFESSOR<br/></td>
+<td class=s47>MAT<br/>MARCOS<br/></td>
+<td class=s38>BIO<br/>PROTÁSIO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s39>PV<br/>WENDSON<br/></td>
+<td class=s39>PV<br/>WENDSON<br/></td>
+<td class=s35>TEC. ART.<br/>LUCAS<br/></td>
+<td class=s35>TEC. ART.<br/>LUCAS<br/></td>
+<td class=s35>TEC. ART.<br/>LUCAS<br/></td>
+<td class=s47>MAT<br/>MARCOS<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s20>ED. FIS<br/>MYRELA<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=s22>FILO<br/>JIRLAN<br/></td>
+<td class=s43>QUI<br/>EDENILZA<br/></td>
+<td class=xl3>HIST. ART.<br/>SEM PROFESSOR<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s20>SAUDE OCUP.<br/>MYRELA<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=s20>ED. FIS<br/>MYRELA<br/></td>
+<td class=s43>QUI<br/>EDENILZA<br/></td>
+<td class=s47>MAT<br/>MARCOS<br/></td>
+<td class=s44>PI<br/>GENILDA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s21>GEO<br/>EDUINA<br/></td>
+<td class=xl3>DESENHO<br/>SEM PROFESSOR<br/></td>
+<td class=xl3>DESENHO<br/>SEM PROFESSOR<br/></td>
+<td class=xl3>DESENHO<br/>SEM PROFESSOR<br/></td>
+<td class=s47>MAT<br/>MARCOS<br/></td>
+<td class=xl3>ECON. CRIAT.<br/>SEM PROFESSOR<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>I2A</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s15>PRAT. LGG E CHS<br/>JOYCE<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s38>EL 2<br/>PROTÁSIO<br/></td>
+<td class=s38>EL 2<br/>PROTÁSIO<br/></td>
+<td class=s22>FILO<br/>JIRLAN<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s15>PRAT. LGG E CHS<br/>JOYCE<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s33>MAT<br/>LEANDRO<br/></td>
+<td class=s44>BIO<br/>GENILDA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s25>INGLÊS<br/>BETE<br/></td>
+<td class=s43>PI<br/>EDENILZA<br/></td>
+<td class=s18>APROF LGG E CHS<br/>DARA<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s43>PI<br/>EDENILZA<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s36>EL 1<br/>PEDRO<br/></td>
+<td class=s36>EL 1<br/>PEDRO<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s18>APROF LGG E CHS<br/>DARA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3>CLUB. JUV.<br/>SEM PROFESSOR<br/></td>
+<td class=s36>HIST<br/>PEDRO<br/></td>
+<td class=s21>GEO<br/>EDUINA<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=s11>FIS<br/>ANTONIO BISPO<br/></td>
+<td class=s21>PV<br/>EDUINA<br/></td>
+<td class=s21>PV<br/>EDUINA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>I2B</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s14>PV<br/>JEFERSON<br/></td>
+<td class=s14>PV<br/>JEFERSON<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s17>SOCIO<br/>DIDA<br/></td>
+<td class=s41>MAT<br/>MANOEL<br/></td>
+<td class=s32>APROF LGG E CHS<br/>TATIANA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s22>EL 2<br/>JIRLAN<br/></td>
+<td class=s22>EL 2<br/>JIRLAN<br/></td>
+<td class=s41>MAT<br/>MANOEL<br/></td>
+<td class=s32>APROF LGG E CHS<br/>TATIANA<br/></td>
+<td class=s22>FILO<br/>JIRLAN<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s17>HIST<br/>DIDA<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s31>PRAT. LGG E CHS<br/>ELIANA<br/></td>
+<td class=s30>PI<br/>LUCILENE<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s24>EL 1<br/>BERIVÂNIA<br/></td>
+<td class=s24>EL 1<br/>BERIVÂNIA<br/></td>
+<td class=s30>PI<br/>LUCILENE<br/></td>
+<td class=s28>PORT<br/>SILVÂNIA<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3>CLUB. JUV.<br/>SEM PROFESSOR<br/></td>
+<td class=s31>GEO<br/>ELIANA<br/></td>
+<td class=s41>MAT<br/>MANOEL<br/></td>
+<td class=s31>PRAT. LGG E CHS<br/>ELIANA<br/></td>
+<td class=s44>BIO<br/>GENILDA<br/></td>
+<td class=s41>MAT<br/>MANOEL<br/></td>
+<td class=s41>FIS<br/>MANOEL<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>I3A</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s11>FIS<br/>ANTONIO BISPO<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=s41>PI<br/>MANOEL<br/></td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s25>INGLÊS<br/>BETE<br/></td>
+<td class=s34>QUI<br/>JAQUELINE<br/></td>
+<td class=s25>PV<br/>BETE<br/></td>
+<td class=s25>PV<br/>BETE<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s17>HIST<br/>DIDA<br/></td>
+<td class=s35>BIO<br/>LUCAS<br/></td>
+<td class=s42>GEO<br/>MICHELE<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s23>ED. FIS<br/>JULIANA<br/></td>
+<td class=s25>INGLÊS<br/>BETE<br/></td>
+<td class=s35>BIO<br/>LUCAS<br/></td>
+<td class=s39>EL 1<br/>WENDSON<br/></td>
+<td class=s39>EL 1<br/>WENDSON<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=s42>GEO<br/>MICHELE<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3>CLUB. JUV.<br/>SEM PROFESSOR<br/></td>
+<td class=s17>HIST<br/>DIDA<br/></td>
+<td class=s37>EL 2<br/>WEIDER<br/></td>
+<td class=s11>FIS<br/>ANTONIO BISPO<br/></td>
+<td class=s41>PI<br/>MANOEL<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s17>FILO<br/>DIDA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>I3B</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s44>BIO<br/>GENILDA<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s14>ARTE<br/>JEFERSON<br/></td>
+<td class=s22>FILO<br/>JIRLAN<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=s17>HIST<br/>DIDA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s37>PV<br/>WEIDER<br/></td>
+<td class=s37>PV<br/>WEIDER<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s16>EST. ORIENT<br/>VERIFICAR<br/></td>
+<td class=s15>INGLÊS<br/>JOYCE<br/></td>
+<td class=s43>QUI<br/>EDENILZA<br/></td>
+<td class=s25>PI<br/>BETE<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=s26>MAT<br/>OLAVO<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s31>GEO<br/>ELIANA<br/></td>
+<td class=s43>QUI<br/>EDENILZA<br/></td>
+<td class=s25>PI<br/>BETE<br/></td>
+<td class=s44>EL 1<br/>GENILDA<br/></td>
+<td class=s44>EL 1<br/>GENILDA<br/></td>
+<td class=s39>FIS<br/>WENDSON<br/></td>
+<td class=s46>PORT<br/>HELTON<br/></td>
+<td class=xl2></td>
+<td class=xl2></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3>CLUB. JUV.<br/>SEM PROFESSOR<br/></td>
+<td class=s37>ED. FIS<br/>WEIDER<br/></td>
+<td class=s17>EL 2<br/>DIDA<br/></td>
+<td class=s44>BIO<br/>GENILDA<br/></td>
+<td class=s19>SOCIO<br/>FABRÍCIO<br/></td>
+<td class=s17>HIST<br/>DIDA<br/></td>
+<td class=s31>GEO<br/>ELIANA<br/></td>
+<td class=xl3></td>
+<td class=xl3></td>
+</tr>
+</table>
+</p><p>
+<h1>EJA-LING1</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s48>PRAT. LING<br/>JAILMA<br/></td>
+<td class=s48>PRAT. LING<br/>JAILMA<br/></td>
+<td class=s48>PRAT. LING<br/>JAILMA<br/></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s48>PRAT. LING<br/>JAILMA<br/></td>
+<td class=s48>PRAT. LING<br/>JAILMA<br/></td>
+<td class=s48>PRAT. LING<br/>JAILMA<br/></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s47>PRAT. PROF<br/>MARCOS<br/></td>
+<td class=s47>PRAT. PROF<br/>MARCOS<br/></td>
+<td class=s47>PRAT. PROF<br/>MARCOS<br/></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s48>PORT<br/>JAILMA<br/></td>
+<td class=s48>PORT<br/>JAILMA<br/></td>
+<td class=s48>PORT<br/>JAILMA<br/></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s48>PRAT. LING<br/>JAILMA<br/></td>
+<td class=s48>PRAT. LING<br/>JAILMA<br/></td>
+<td class=s48>PRAT. LING<br/>JAILMA<br/></td>
+</tr>
+</table>
+</p><p>
+<h1>EJA-LING2</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s45>PRAT. LING<br/>WELITON<br/></td>
+<td class=s45>PRAT. LING<br/>WELITON<br/></td>
+<td class=s45>PRAT. LING<br/>WELITON<br/></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s45>PRAT. LING<br/>WELITON<br/></td>
+<td class=s45>PRAT. LING<br/>WELITON<br/></td>
+<td class=s45>PRAT. LING<br/>WELITON<br/></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s45>PORT<br/>WELITON<br/></td>
+<td class=s45>PORT<br/>WELITON<br/></td>
+<td class=s45>PORT<br/>WELITON<br/></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s29>PRAT. PROF<br/>BRITO<br/></td>
+<td class=s29>PRAT. PROF<br/>BRITO<br/></td>
+<td class=s29>PRAT. PROF<br/>BRITO<br/></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s45>PRAT. LING<br/>WELITON<br/></td>
+<td class=s45>PRAT. LING<br/>WELITON<br/></td>
+<td class=s45>PRAT. LING<br/>WELITON<br/></td>
+</tr>
+</table>
+</p><p>
+<h1>EJA-MAT</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s47>PRAT. MAT<br/>MARCOS<br/></td>
+<td class=s47>PRAT. MAT<br/>MARCOS<br/></td>
+<td class=s47>PRAT. MAT<br/>MARCOS<br/></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s47>PRAT. MAT<br/>MARCOS<br/></td>
+<td class=s47>PRAT. MAT<br/>MARCOS<br/></td>
+<td class=s47>PRAT. MAT<br/>MARCOS<br/></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s17>PRAT. PROF<br/>DIDA<br/></td>
+<td class=s17>PRAT. PROF<br/>DIDA<br/></td>
+<td class=s17>PRAT. PROF<br/>DIDA<br/></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s45>PORT<br/>WELITON<br/></td>
+<td class=s45>PORT<br/>WELITON<br/></td>
+<td class=s45>PORT<br/>WELITON<br/></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s47>PRAT. MAT<br/>MARCOS<br/></td>
+<td class=s47>PRAT. MAT<br/>MARCOS<br/></td>
+<td class=s47>PRAT. MAT<br/>MARCOS<br/></td>
+</tr>
+</table>
+</p><p>
+<h1>EJA-NATUREZA</h1>
+
+<table border=1 cellpadding=0 cellspacing=0 style='border:2px solid black; border-collapse: collapse;table-layout:fixed'>
+<tr>
+<td class=xl1>Dia</td>
+<td class=xl1>1</td>
+<td class=xl1>2</td>
+<td class=xl1>3</td>
+<td class=xl1>4</td>
+<td class=xl1>5</td>
+<td class=xl1>6</td>
+<td class=xl1>7</td>
+<td class=xl1>8</td>
+<td class=xl1>9</td>
+<td class=xl1>10</td>
+<td class=xl1>11</td>
+<td class=xl1>12</td>
+<td class=xl1>13</td>
+<td class=xl1>14</td>
+</tr>
+<tr>
+<td class=xl3h>Seg</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s13>PRAT. NAT<br/>MÔNICA<br/></td>
+<td class=s13>PRAT. NAT<br/>MÔNICA<br/></td>
+<td class=s13>PRAT. NAT<br/>MÔNICA<br/></td>
+</tr>
+<tr>
+<td class=xl2h>Ter</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+<td class=s32>PORT<br/>TATIANA<br/></td>
+</tr>
+<tr>
+<td class=xl3h>Qua</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s13>PRAT. NAT<br/>MÔNICA<br/></td>
+<td class=s13>PRAT. NAT<br/>MÔNICA<br/></td>
+<td class=s13>PRAT. NAT<br/>MÔNICA<br/></td>
+</tr>
+<tr>
+<td class=xl2h>Qui</td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=xl2></td>
+<td class=s47>PRAT. PROF<br/>MARCOS<br/></td>
+<td class=s47>PRAT. PROF<br/>MARCOS<br/></td>
+<td class=s47>PRAT. PROF<br/>MARCOS<br/></td>
+</tr>
+<tr>
+<td class=xl3h>Sex</td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=xl3></td>
+<td class=s13>PRAT. NAT<br/>MÔNICA<br/></td>
+<td class=s13>PRAT. NAT<br/>MÔNICA<br/></td>
+<td class=s13>PRAT. NAT<br/>MÔNICA<br/></td>
+</tr>
+</table>
+</p>
+</body>
+</html>

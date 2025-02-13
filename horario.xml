@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<timetable ascttversion="2025.4.1" importtype="database" options="idprefix:MyApp" displayname="MyApp sample XML configuration" displaycountries="us">
+   <teachers options="import:disable,canadd,canremove,canupdate,primarytt,silent" columns="id,name,short">
+      <teacher id="*1" name="LEANDRO" short="LEANDRO"/>
+      <teacher id="*2" name="DARA" short="DARA"/>
+      <teacher id="*3" name="OLAVO" short="OLAVO"/>
+      <teacher id="*4" name="PEDRO" short="PEDRO"/>
+      <teacher id="*5" name="FABRÍCIO" short="FABRÍCIO"/>
+      <teacher id="*6" name="ELIANA" short="ELIANA"/>
+      <teacher id="*7" name="LUCAS" short="LUCAS"/>
+      <teacher id="*8" name="JAQUELINE" short="JAQUELINE"/>
+      <teacher id="*9" name="WENDSON" short="WENDSON"/>
+      <teacher id="*10" name="FRANCISCO" short="FRANCISCO"/>
+      <teacher id="*11" name="EDENILZA" short="EDENILZA"/>
+      <teacher id="*12" name="JULIANA" short="JULIANA"/>
+      <teacher id="*13" name="MYRELA" short="MYRELA"/>
+      <teacher id="*14" name="BETE" short="BETE"/>
+      <teacher id="*15" name="ANTONIO BISPO" short="ANTONIO BISPO"/>
+      <teacher id="*16" name="MICHELE" short="MICHELE"/>
+      <teacher id="*17" name="MARCOS" short="MARCOS"/>
+      <teacher id="*18" name="JOYCE" short="JOYCE"/>
+      <teacher id="*19" name="WEIDER" short="WEIDER"/>
+      <teacher id="*20" name="WELITON" short="WELITON"/>
+      <teacher id="*21" name="FIALHO" short="FIALHO"/>
+      <teacher id="*22" name="LUCILENE" short="LUCILENE"/>
+      <teacher id="*23" name="HELTON" short="HELTON"/>
+      <teacher id="*24" name="JIRLAN" short="JIRLAN"/>
+      <teacher id="*25" name="JEFERSON" short="JEFERSON"/>
+      <teacher id="*26" name="EDUINA" short="EDUINA"/>
+      <teacher id="*27" name="BRITO" short="BRITO"/>
+      <teacher id="*28" name="DIDA" short="DIDA"/>
+      <teacher id="*29" name="BERIVÂNIA" short="BERIVÂNIA"/>
+      <teacher id="*30" name="MANOEL" short="MANOEL"/>
+      <teacher id="*31" name="JAILMA" short="JAILMA"/>
+      <teacher id="*32" name="TATIANA" short="TATIANA"/>
+      <teacher id="*33" name="ELAINE" short="ELAINE"/>
+      <teacher id="*34" name="MÔNICA" short="MÔNICA"/>
+      <teacher id="*35" name="SILVÂNIA" short="SILVÂNIA"/>
+      <teacher id="*36" name="GENILDA" short="GENILDA"/>
+      <teacher id="*37" name="ANA PROTÁSIO" short="PROTÁSIO"/>
+      <teacher id="*38" name="KATIA" short="KATIA"/>
+   </teachers>
+   <classes options="import:disable,canadd,canremove,canupdate,primarytt,silent" columns="id,name">
+      <class id="*1" name="M1A"/>
+      <class id="*2" name="M1B"/>
+      <class id="*3" name="M1C"/>
+      <class id="*4" name="M2A"/>
+      <class id="*5" name="M2B"/>
+      <class id="*6" name="M2C"/>
+      <class id="*7" name="M2D"/>
+      <class id="*8" name="M2E"/>
+      <class id="*9" name="M3A"/>
+      <class id="*10" name="M3B"/>
+      <class id="*11" name="M3C"/>
+      <class id="*12" name="I1TEC"/>
+      <class id="*13" name="I1A"/>
+      <class id="*14" name="I1B"/>
+      <class id="*15" name="1IC"/>
+      <class id="*16" name="I1D"/>
+      <class id="*17" name="I2TEC"/>
+      <class id="*18" name="I2A"/>
+      <class id="*19" name="I3A"/>
+      <class id="*20" name="I3B"/>
+      <class id="*21" name="EJA-LING1"/>
+      <class id="*22" name="EJA-LING2"/>
+      <class id="*23" name="EJA-MAT"/>
+      <class id="*24" name="EJA-NATUREZA"/>
+   </classes>
+   <subjects options="import:disable,canadd,canremove,canupdate,primarytt,silent" columns="id,name,short">
+      <subject id="*1" name="LINGUA PORTUGUESA" short="PORT"/>
+      <subject id="*2" name="EDUCAÇÃO FÍSICA" short="ED. FIS"/>
+      <subject id="*3" name="ARTE" short="ARTE"/>
+      <subject id="*4" name="LÍNGUA INGLESA" short="INGLÊS"/>
+      <subject id="*5" name="MATEMÁTICA" short="MAT"/>
+      <subject id="*6" name="QUÍMICA" short="QUI"/>
+      <subject id="*7" name="FÍSICA" short="FIS"/>
+      <subject id="*8" name="BIOLOGIA" short="BIO"/>
+      <subject id="*9" name="HISTÓRIA" short="HIST"/>
+      <subject id="*10" name="GEOGRAFIA" short="GEO"/>
+      <subject id="*11" name="FILOSOFIA" short="FILO"/>
+      <subject id="*12" name="SOCIOLOGIA" short="SOCIO"/>
+      <subject id="*13" name="PROJETO DE VIDA" short="PV"/>
+      <subject id="*14" name="TEMAS DE APROFUDAMENTO CURRICULAR (TAC)" short="TAC"/>
+      <subject id="*15" name="PRÁTICAS DE INTEGRAÇÃO COM TERRITÓRIO" short="PIT"/>
+      <subject id="*16" name="TEMAS DE APROFUNDAMENTO MAT E CNT" short="APROF MAT E CNT"/>
+      <subject id="*17" name="TEMAS DE APROFUNDAMENTO LGG E CHS" short="APROF LGG E CHS"/>
+      <subject id="*18" name="PRÁTICAS DE MAT E CNT NO TERRITÓRIO" short="PRAT. MAT E CNT"/>
+      <subject id="*19" name="PRÁTICAS DE LGG E CHS NO TERRITÓRIO" short="PRAT. LGG E CHS"/>
+      <subject id="*20" name="PROTURMA" short="PV"/>
+      <subject id="*21" name="ELETIVA 1" short="EL 1"/>
+      <subject id="*22" name="ELETIVA 2" short="EL 2"/>
+      <subject id="*23" name="ESTUDOS ORIENTADOS" short="EST. ORIENT"/>
+      <subject id="*24" name="CLUBE JUVENIL" short="CLUB. JUV."/>
+      <subject id="*25" name="PROJETO INTEGRADOR" short="PI"/>
+      <subject id="*26" name="PRÁTICAS MATEMÁTICA" short="PRAT. MAT"/>
+      <subject id="*27" name="PRÁTICAS NATUREZA" short="PRAT. NAT"/>
+      <subject id="*28" name="PRÁTICAS LINGUAGENS" short="PRAT. LING"/>
+      <subject id="*29" name="PRÁTICAS HUMANAS" short="PRAT. HUM"/>
+      <subject id="*30" name="PRÁTICAS PROFISSIONAIS" short="PRAT. PROF"/>
+      <subject id="*31" name="ATELIE Ê TECNICAS DE ARTESANATO" short="TEC. ART."/>
+      <subject id="*32" name="SAÚDE OCUPACIONAL" short="SAUDE OCUP."/>
+      <subject id="*33" name="COOPERATIVISMO E SUSTENTABILIDADE" short="COOP. SUST."/>
+      <subject id="*34" name="FUNDAMENTOS DO COOPERATIVISMO" short="FUND. COOP."/>
+      <subject id="*35" name="COOPERATIVISMO E ECONOMIA SOLIDARIA" short="COOP. SOLID."/>
+      <subject id="*36" name="HISTORIA DO ARTESANATO" short="HIST. ART."/>
+      <subject id="*37" name="DESENHO ARTISTICO E TECNICO" short="DESENHO"/>
+      <subject id="*38" name="ECONOMIA CRIATIVA" short="ECON. CRIAT."/>
+      <subject id="*39" name="PLÁSTICA E ERGONOMIA" short="PLAST. ERG."/>
+   </subjects>
+   <classrooms options="import:disable,canadd,canremove,canupdate,primarytt,silent" columns="id,name,short"></classrooms>
+   <lessons options="import:disable,canadd,canremove,canupdate,primarytt,silent" columns="classids,subjectid,periodsperweek,teacherids">
+      <lesson classids="*10" subjectid="*5" periodsperweek="4.0" teacherids="*3"/>
+      <lesson classids="*11" subjectid="*9" periodsperweek="2.0" teacherids="*4"/>
+      <lesson classids="*9" subjectid="*9" periodsperweek="2.0" teacherids="*4"/>
+      <lesson classids="*9" subjectid="*10" periodsperweek="2.0" teacherids="*16"/>
+      <lesson classids="*10" subjectid="*10" periodsperweek="2.0" teacherids="*16"/>
+      <lesson classids="*11" subjectid="*10" periodsperweek="2.0" teacherids="*16"/>
+      <lesson classids="*9" subjectid="*3" periodsperweek="1.0" teacherids="*25"/>
+      <lesson classids="*11" subjectid="*3" periodsperweek="1.0" teacherids="*25"/>
+      <lesson classids="*9" subjectid="*4" periodsperweek="2.0" teacherids="*14"/>
+      <lesson classids="*9" subjectid="*6" periodsperweek="2.0" teacherids="*11"/>
+   </lessons>
+   <cards options="import:disable,canadd,canremove,canupdate,primarytt,silent" columns="day,period,classids,subjectid,teacherids,classroomids">
+      <card classids="*10" subjectid="*5" teacherids="*3" classroomids="" day="3" period="2"/>
+      <card classids="*10" subjectid="*5" teacherids="*3" classroomids="" day="2" period="1"/>
+      <card classids="*10" subjectid="*5" teacherids="*3" classroomids="" day="2" period="5"/>
+      <card classids="*10" subjectid="*5" teacherids="*3" classroomids="" day="2" period="3"/>
+      <card classids="*11" subjectid="*9" teacherids="*4" classroomids="" day="4" period="4"/>
+      <card classids="*11" subjectid="*9" teacherids="*4" classroomids="" day="3" period="3"/>
+      <card classids="*9" subjectid="*9" teacherids="*4" classroomids="" day="4" period="2"/>
+      <card classids="*9" subjectid="*9" teacherids="*4" classroomids="" day="3" period="1"/>
+      <card classids="*9" subjectid="*10" teacherids="*16" classroomids="" day="2" period="3"/>
+      <card classids="*9" subjectid="*10" teacherids="*16" classroomids="" day="4" period="3"/>
+   </cards>
+</timetable>

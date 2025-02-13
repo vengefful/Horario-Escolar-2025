@@ -5,31 +5,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horário Integral</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .est-orient {
+      white-space: pre-wrap; /* Quebrar o texto */
+    }
+      </style>
 </head>
 <body>
 
   <h1>Horário Integral</h1>
-    <button onclick="gerarPDF('horarioIntegral', 'Horario_Integral')">Baixar PDF</button>
+  <button onclick="gerarPDF('horarioIntegral', 'Horario_Integral')">Baixar PDF</button>
   <a href="index.html">Voltar</a>
 
   <div class="table-container">
-    <table id="horarioIntegral"> <!-- Ou horarioIntegral -->
+    <table id="horarioIntegral">
       <thead>
         <tr>
-            <th>Dia</th> <th>Aula</th> <th>Horário</th>
-            <th>I1TEC</th> <th>I1A</th> <th>I1B</th> <th>I1C</th> 
-            <th>I2TEC</th> <th>I2A</th> <th>I3A</th> <th>I3B</th>
-          </tr>
+          <th>Dia</th>
+          <th>Aula</th>
+          <th>Horário</th>
+        </tr>
       </thead>
       <tbody></tbody>
     </table>
   </div>
   
-    <!-- Biblioteca jsPDF e AutoTable -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.21/jspdf.plugin.autotable.min.js"></script>
-  <script src="script.js"></script>
-  <script>carregarHorario('horario_integral.csv', 'horarioIntegral', horariosIntegral, 7);</script>
+  <!-- Biblioteca jsPDF e AutoTable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.21/jspdf.plugin.autotable.min.js"></script>
+  <script src="turmas_integral.js"></script>
+
+  <script>
+    function preencherTabela(dados) {
+      const tabela = document.getElementById('horarioIntegral');
+      const tbody = tabela.getElementsByTagName('tbody')[0];
+      const turmas = [...new Set(dados.map(dado => dado.turma))];
+
+      // Adicionar colunas das turmas no cabeçalho apenas uma vez
+      const thead = tabela.getElementsByTagName('thead')[0];
+      const headerRow = thead.rows[0];
+      if (headerRow.cells.length === 3) { // Verifica se as colunas das turmas já foram adicionadas
+        turmas.forEach(turma => {
+          const th = document.createElement('th');
+          th.textContent = turma;
+          headerRow.appendChild(th);
+        });
+      }
+
+      // Agrupar dados por dia e aula
+      const dadosAgrupados = {};
+      dados.forEach(dado => {
+        const chave = `${dado.dia}-${dado.aula}`;
+        if (!dadosAgrupados[chave]) {
+          dadosAgrupados[chave] = { dia: dado.dia, aula: dado.aula, horarios: {} };
+        }
+        dadosAgrupados[chave].horarios[dado.turma] = `${dado.disciplina} - ${dado.nome || 'Sem Professor'}`;
+      });
+
+      // Definir horários das aulas
+      const horarios = {
+        1: '12:30 - 13:30',
+        2: '13:30 - 14:30',
+        3: '14:30 - 15:30',
+        4: '15:40 - 16:40',
+        5: '16:40 - 17:40',
+        6: '17:50 - 18:50',
+        7: '18:50 - 19:50',
+        8: '19:50 - 20:50',
+        9: '20:50 - 21:50',
+        10: '21:50 - 22:50',
+        11: '22:50 - 23:50',
+        12: '23:50 - 00:50'
+      };
+
+      // Converter as aulas conforme solicitado
+      const converterAula = aula => {
+        const conversao = {
+          6: 1,
+          7: 2,
+          8: 3,
+          9: 4,
+          10: 5,
+          11: 6,
+          12: 7
+        };
+        return conversao[aula] || aula;
+      };
+
+      // Preencher a tabela
+      let lastDia = '';
+      let lastRow = null;
+      let rowspan = 1;
+
+      Object.values(dadosAgrupados).forEach(dado => {
+        const newRow = tbody.insertRow();
+        if (dado.dia === lastDia) {
+          rowspan++;
+          lastRow.cells[0].rowSpan = rowspan;
+          newRow.insertCell(0).style.display = 'none';
+        } else {
+          lastDia = dado.dia;
+          lastRow = newRow;
+          rowspan = 1;
+          const diaCell = newRow.insertCell(0);
+          diaCell.textContent = dado.dia;
+          newRow.classList.add('new-day'); // Adicionar a classe new-day
+        }
+        const aulaConvertida = converterAula(dado.aula);
+        newRow.insertCell(1).textContent = aulaConvertida;
+        newRow.insertCell(2).textContent = horarios[aulaConvertida]; // Preencher com o horário correspondente
+
+        turmas.forEach(turma => {
+          const cell = newRow.insertCell();
+                      cell.textContent = dado.horarios[turma] || `Sem Professor`;
+                  });
+      });
+    }
+
+    function gerarPDF(tabelaId, nomeArquivo) {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF('landscape'); // Modo horizontal
+      doc.autoTable({
+        html: `#${tabelaId}`,
+        styles: { fontSize: 8 }, // Reduzir o tamanho da fonte
+        margin: { top: 10, bottom: 10, left: 10, right: 10 } // Ajustar margens
+      });
+      doc.save(`${nomeArquivo}.pdf`);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      carregarHTML('Classes.html', doc => {
+        const dadosIntegral = extrairDadosIntegral(doc);
+        console.log('Dados Integral:', dadosIntegral);
+        preencherTabela(dadosIntegral);
+      });
+    });
+  </script>
 
 </body>
 </html>
